@@ -1,0 +1,112 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+h1
+{   position:relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {color: #ffd11a; left:-50px; top:0px;}
+    25%  {color:#ffff80; left:85px; top:0px;}
+    50%  {color:#ffd11a; left:85px; top:50px;}
+    75%  {color:#ffff80; left:-50px; top:50px;}
+    100% {color:#ffd11a; left:-50px; top:0px;}
+}
+
+body{text-align:center;
+	font-stretch:expanded;}
+.vid
+{
+	position:absolute;
+	top:130px;
+	left:400px;
+}
+.pwt
+{	position: absolute;
+	color:yellow;
+	top:150px;
+	left:50px;
+	width:350px;
+	height:200px;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color:white;
+}
+.pblts
+{	position: absolute;
+	color:yellow;
+	top:0px;
+	left:850px;
+	width:350px;
+	height:200px;
+	text-align:left;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color: white;
+}
+.pinfo
+{
+	color:#fff0b3;
+	position:absolute;
+	top:250px;
+	left:25px;
+	width:1200px;
+}
+#hicon
+    {
+      border-radius:50%;
+      position:relative;
+      top:15px;
+      float: right;
+      height:50px;
+      width:50px;
+    }
+
+</style>
+<body background="maxres.jpg">
+<a href="index.php"><img src="hicon.png" id="hicon"></a>
+<div id="planet">
+<h1><center>JUPITER</center></h1>
+<div class="vid">
+<video width="520" height="240" autoplay muted><source src= "JUPITER.mp4"></video>
+  </div>
+  <div class="pwt">
+ <br><br>CURIOUS TO CHECK HOW MUCH YOU <br> WEIGH ON JUPITER??<br><br><br>
+  <input type="text" placeholder="enter your weight in kg" id="jup">
+  <input type="button" value="GO!" onclick="wt()" style="height: 20px;width: 65px;background-color:yellow"></button><br><br>
+  <p id="detailp"></p>
+  <script>
+  c=0;
+  function wt()
+  {
+  	
+  	w=document.getElementById("jup").value;
+  	jw=w*2.34;
+  	document.getElementById("detailp").innerHTML="YOUR WEIGH: "+jw+" kg!!!";
+  }
+  </script>
+  <div class="pblts">
+  <ul></br>
+  <li>NAMED AFTER:Jupiter is named after the king of the Roman gods.</li></br>
+  <li>DIAMETER:139,822km</li></br>
+  <li>DISTANCE FROM SUN:778,340,821km</li></br>
+  <LI>ORBIT PERIOD:11.9 years</LI>
+  </ul>
+  </div>
+  <div class="pinfo"><center>
+	<p>The ancient Babylonians were the first to record their sightings of Jupiter.
+	Only the Sun, Moon and Venus are brighter. It is one of five planets visible to the naked eye from Earth.Jupiter is the fourth brightest object in the solar 
+	system.Jupiter has the shortest day of all the planets.Jupiter orbits the Sun once every 11.8 Earth years.
+	It turns on its axis once every 9 hours and 55 minutes. The rapid rotation flattens the planet slightly, giving it an oblate shape.
+	Jupiter has unique cloud features.The Great Red Spot is a huge storm on Jupiter.Jupiter’s interior is made of rock, metal, and hydrogen compounds.Jupiter’s
+	 moon. Ganymede(measures 5,268 km across, making it larger than the planet Mercury) is the largest moon in the solar system.
+ 	Jupiter’s moons are sometimes called the Jovian satellites, the largest of these are Ganymeade, Callisto Io and Europa.Jupiter has a thin ring system.
+	Eight spacecraft have visited Jupiter. Wondering if you could ever visit this planet too? ;D
+	</center></p>
+  </div>
+  </div>
+  </body>

@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<style>
+
+	body{background-color:#33001a;}  p{color: #ff3300;}  
+ 
+	#div1{height:100px;
+width:cover;background-image:url("sp.jpg");
+border-radius:20px; opacity:0.8;}
+
+
+	#dude{color: white;
+font-size:3em;
+position:relative;
+left:5em;
+top:0.5em;}
+
+	#div2{position:relative;
+left:0%;
+top:0em;
+height:25em;
+width:49%;
+border-radius:20px;
+background-color:black; }
+
+
+	#div3{position:relative;
+left:50%;
+top:-26em;
+height:25em;
+width:49%;
+border-radius:20px;
+
+background-image:url("pic(b n w).jpg"); opacity:0.8;}
+
+
+	#us{font-size:3em;
+position:relative;
+left:45%;
+top:85%;
+cursor:pointer; }
+
+
+	#ai{width:5em;
+height:5em;
+
+cursor:pointer; position:absolute;left:75px;top:80px;}
+
+	#an{width:5em;
+height:5em;
+cursor:pointer;position:absolute;left:210px;top:100px;}
+
+	#ak{width:5em;
+height:5em;
+cursor:pointer;position:absolute;left:340px;top:110px;}
+
+
+	#p3{font-family:Comic Sans MS;}
+	#pic{position:absolute;
+	left:85px;
+	top:40px;
+	height:300px ;
+	width:400px; 
+	border-radius:15px 60px;}
+			}
+	</style>
+
+</head>
+
+
+<body>
+
+<div>
+	
+	<div id="div1">
+	<p id="dude">Dude!!! Who are these people? </p>
+	</div>
+
+
+	<div id="div2">
+		<img src="pic.jpg" id="pic" />
+		<p id="us" >US<p>
+		<div id="ak" ></div>
+		<div id="an" ></div>
+		<div id="ai" ></div>
+      	</div>
+
+
+	<div id="div3">
+	<center><p id="p3"></br> <b>We Are: </b>
+	</br></br>The Team formed with a desire to change the attitude of young people towards 
+     		their interests on Space!We are team of three enthusiastic people who are keen on exploring the space.In our opinion, space exploration is important 
+		not only to humanity’s curiosity of the great beyond, but it is also important for the future of the earth and all of us living on it. We cannot 
+		ignore the importance of space exploration, nor be complacent in it’s meaning to all of us. We hope space exploration can continue to inspire, 
+	  	educate, and provide for us in the next 40 years as it has the last 40 years.Last but not the least, we believe that most of the great ideas come out 
+		of a thought or involving in a good discussion,hence we provide a platform for discussing ideas. We also aim to give our users a feel of being in 
+		space in the near future. For the people who are always indulged on the social media, this blog provides the oppportunity to discover the real world 
+		outside !</p></center>
+	</div>
+
+</div>
+
+
+<script>
+document.getElementById("us").addEventListener("click",us,false);
+document.getElementById("ai").addEventListener("click",aka,false);
+document.getElementById("an").addEventListener("click",anu,false);
+document.getElementById("ak").addEventListener("click",aish,false);
+	function us()
+
+		{document.getElementById("p3").innerHTML="</br><b>We Are: </b></br></br>The Team formed with a desire to change the attitude of young people towards their interests on Space!We are team of three enthusiastic people who are keen on exploring the space.In our opinion, space exploration is important not only to humanity’s curiosity of the great beyond, but it is also important for the future of the earth and all of us living on it. We cannot ignore the importance of space exploration, nor be complacent in it’s meaning to all of us. We hope space exploration can continue to inspire, educate, and provide for us in the next 40 years as it has the last 40 years.Last but not the least, we believe that most of the great ideas come out of a thought or involving in a good discussion,hence we provide a platform for discussing ideas. We also aim to give our users a feel of being in space in the near future. For the people who are always indulged on the social media, this blog provides the oppportunity to discover the real world outside !";
+}
+	
+function aish()
+		{
+document.getElementById("p3").innerHTML="</br></br><b>Aishwarya</b></br> </br></br> As a child it was always  my dream to fly into the sky and touch the stars . In my opinion space exploration is a very integral part of today's fast growing world. In order to improvise the Communication ,GPS system ,weather forecast, space  exploration plays a major role. Me , along with my two other friends have started this  website to provide a platform for like minded people to voice out their queries , ideas  and also we provide a platform for our viewers to be updated with the recent space missions  and also aim to provide a feel of our solar system. ";
+document.getElementById("div3").setAttribute("style","background-image:url('aishwarya.jpg')");}
+	function anu()
+		{
+document.getElementById("p3").innerHTML="</br></br><b>Anusha</b></br></br></br> I ,  am a space enthusiast, who enjoys reading about the different space missions.Every mission which any space organisation takes up whether it is the Mangalayan or Juno's journey to Jupiter or the Heliopause mission has kept me extremely curious. Me , along with my two other friends have started this  website to provide a platform for like minded people to voice out their queries , ideas  and also we provide a platform for our viewers to be updated with the recent space missions  and also aim to provide a feel of our solar system. ";
+ document.getElementById("div3").setAttribute("style","background-image:url('anusha.jpg')"); }
+	
+function aka()
+		{
+document.getElementById("p3").innerHTML="</br></br><b>Akanksha</b></br></br> </br>  I , believe that the day we stop exploring is the day we commit ourselves to live in a stagnant world , devoid of curiosity and dreams. We are in a point in history where a proper attention to space and especially near space, may be absolutely crucial in bringing the world together. In my opinion space exploration is a very integral part of today's fast growing world. Me , along with my two other friends have started this  website to provide a platform for like minded people to voice out their queries , ideas because we feel that vision is more important is what we feel. "; 
+document.getElementById("div3").setAttribute("style","background-image:url('akanksha.jpg')"); }
+</script>
+</body>
+
+</html>

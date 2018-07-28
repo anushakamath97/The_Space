@@ -1,0 +1,606 @@
+﻿<!DOCTYPE html>
+<head>
+<title>
+info page
+</title>
+<style type="text/css">
+	body
+	{
+		background-image: url('bg.jpg');
+		background-size: fill;
+		background-repeat: no-repeat;
+
+	}
+	#hicon
+		{
+			border-radius:50%;
+			position:relative;
+			top:15px;
+			float: right;
+			height:50px;
+			width:50px;
+		}
+	#site{	position: absolute;
+			top:0px;
+			font-family: Courier, Monaco, monospace;
+			font-size: 50px;
+			-webkit-animation: mov 10s infinite ;
+			color:rgba(128,223,0,255);
+		}
+
+			@-webkit-keyframes mov{	0% {	left: 20px;}
+									50%{	left:500px;}
+									100% {    left: 700px;}
+									}
+	#pic1
+	{
+		position: absolute;
+		top:173px;
+		left:790px;
+	}
+	#pic2
+	{
+		position: absolute;
+		top:434px;
+		left:785px;
+	}
+	#main
+	{
+		position: relative;
+		top:100px;
+		left:5px;
+		background-color:rgba(255,255,255, 0.4);
+		height: 540px;
+		width:700px;
+		border-radius: 30px;
+
+	}
+	#m1
+	{
+		position: relative;
+		top:35px;
+		left:12px;
+		background-color:rgba(255,255,255, 0.3);
+		border-radius: 10px;
+		height: 200px;
+		width:690px;
+	}
+	#m1a
+	{	
+		position: relative;
+		top:14px;
+		left:18px;
+		height:170px;
+		width:220px;
+		border-radius: 10px;
+
+	}
+	#m1:hover span.text-content1 {
+  opacity: 1;
+}
+	
+		
+	
+	span.text-content1 {
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  color: white;
+  display: table;
+  height: 160px;
+  left: 25px;
+  position: absolute;
+  top: 15px;
+  width: 210px;
+ opacity: 0;
+   -webkit-transition: opacity 500ms;
+   transition: opacity 500ms;
+}
+
+span.text-content1 span.1a {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+#but1
+{
+	position: relative;
+	top:80px;
+	left:67px;
+}
+
+
+#m2
+	{
+		position: absolute;
+		top:35px;
+		left:270px;
+		background-color:rgba(255,255,255, 0);
+		border-radius: 10px;
+		height: 200px;
+		width:690px;
+	}
+	#m1b
+	{	
+		position: relative;
+		top:14px;
+		left:0px;
+		height:170px;
+		width:215px;
+		border-radius: 10px;
+
+	}
+	
+	
+		#m2:hover span.text-content2 {
+  opacity: 1;
+}
+	
+		
+	
+	span.text-content2 {
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  color: white;
+  display: table;
+  height: 160px;
+  left: 5px;
+  position: absolute;
+  top: 18px;
+  width: 207px;
+ opacity: 0;
+   -webkit-transition: opacity 500ms;
+   transition: opacity 500ms;
+}
+
+span.text-content2 span.1b {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+	
+	#but2
+{
+	position: relative;
+	top:80px;
+	left:47px;
+}
+
+
+
+#m3
+	{
+		position: absolute;
+		top:35px;
+		left:500px;
+		background-color:rgba(255,255,255, 0);
+		border-radius: 10px;
+		height: 200px;
+		width:210px;
+	}
+	#m1c
+	{	
+		position: relative;
+		top:14px;
+		left:0px;
+		height:170px;
+		width:180px;
+		border-radius: 10px;
+
+	}
+	
+	
+		#m3:hover span.text-content3 {
+  opacity: 1;
+}
+	
+		
+	
+	span.text-content3 {
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  color: white;
+  display: table;
+  height: 160px;
+  left: 5px;
+  position: absolute;
+  top: 18px;
+  width: 200px;
+ opacity: 0;
+   -webkit-transition: opacity 500ms;
+   transition: opacity 500ms;
+}
+
+span.text-content3 span.1c {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+	
+	#but3
+{
+	position: relative;
+	top:80px;
+	left:87px;
+}
+
+
+
+#m4
+	{
+		position: relative;
+		top:95px;
+		left:13px;
+		background-color:rgba(255,255,255, 0.3);
+		border-radius: 10px;
+		height: 200px;
+		width:680px;
+	}
+	#m1d
+	{	
+		position: relative;
+		top:14px;
+		left:18px;
+		height:170px;
+		width:220px;
+		border-radius: 10px;
+
+	}
+	#m4:hover span.text-content4 {
+  opacity: 1;
+}
+	
+		
+	
+	span.text-content4 {
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  color: white;
+  display: table;
+  height: 155px;
+  left: 24px;
+  position: absolute;
+  top: 20px;
+  width: 210px;
+ opacity: 0;
+   -webkit-transition: opacity 500ms;
+   transition: opacity 500ms;
+}
+
+span.text-content4 span.1d {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+#but4
+{
+	position: relative;
+	top:80px;
+	left:97px;
+}
+
+
+
+#m5
+	{
+		position: absolute;
+		top:295px;
+		left:270px;
+		background-color:rgba(255,255,255, 0);
+		border-radius: 10px;
+		height: 200px;
+		width:215px;
+	}
+	#m1e
+	{	
+		position: relative;
+		top:14px;
+		left:0px;
+		height:170px;
+		width:215px;
+		border-radius: 10px;
+
+	}
+	
+	
+		#m5:hover span.text-content5 {
+  opacity: 1;
+}
+	
+		
+	
+	span.text-content5 {
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  color: white;
+  display: table;
+  height: 160px;
+  left: 5px;
+  position: absolute;
+  top: 18px;
+  width: 207px;
+ opacity: 0;
+   -webkit-transition: opacity 500ms;
+   transition: opacity 500ms;
+}
+
+span.text-content5 span.1e {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+	
+	#but5
+{
+	position: relative;
+	top:80px;
+	left:93px;
+}
+
+
+#m6
+	{
+		position: absolute;
+		top:295px;
+		left:500px;
+		background-color:rgba(255,255,255, 0);
+		border-radius: 10px;
+		height: 200px;
+		width:210px;
+	}
+	#m1f
+	{	
+		position: relative;
+		top:14px;
+		left:0px;
+		height:170px;
+		width:180px;
+		border-radius: 10px;
+
+	}
+	
+	
+		#m6:hover span.text-content6 {
+  opacity: 1;
+}
+	
+		
+	
+	span.text-content6 {
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  color: white;
+  display: table;
+  height: 160px;
+  left: 5px;
+  position: absolute;
+  top: 18px;
+  width: 200px;
+ opacity: 0;
+   -webkit-transition: opacity 500ms;
+   transition: opacity 500ms;
+}
+
+span.text-content6 span.1f {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+	
+	#but6
+{
+	position: relative;
+	top:95px;
+	left:0px;
+}
+#pop
+{
+		position: absolute;
+		top:110px;
+		left:740px;
+		background-color:rgba(255,255,255, 0.4);
+		height: 540px;
+		width:510px;
+		border-radius: 30px;
+
+}
+#close
+{
+	position:relative;
+	top:10px;
+	left:470px;
+}
+#heading
+{	position: absolute;
+	top:5px;
+	left:105px;
+}
+#im
+{
+	position: absolute;
+	top:68px;
+	left:130px;
+	height: 180px;
+	width: 240px;
+	border:10px solid black;
+	border-radius: 10px;
+}
+#con
+{
+	position: absolute;
+	top:262px;
+	left:35px;
+	height:250px;
+	width:450px;
+	background-color:rgba(255,255,255, 0);
+	border-radius: 10px;
+
+}
+</style>
+</head>
+<body>
+<h1 id="site">I&nbspN&nbspF&nbspO&nbsp&nbsp&nbspS&nbspI&nbspT&nbspE</h1>
+<a href="index.php"><img src="hicon.png" id="hicon"></a>
+<div id="pic1">
+<img src="pic.png" id="pica">
+</div>
+<div id="pic2">
+<img src="pic2.png" id="picb">
+</div>
+<div id="main">
+	<div id="m1">
+		<img id="m1a" src="juno.jpg">
+		<span class="text-content1"><span class="1a"><h3>Juno enters jupiters orbit...<input type="button" value="Read more.." id="but1" onclick="disp(this.id)"></input></h3></span></span>
+	</div>
+	<div id="m2">
+		<img id="m1b" src="volc.jpg">
+		<span class="text-content2"><span class="1b" ><h3>Are volcanoes on venus active??<input type="button" value="Read more.." id="but2" onclick="disp(this.id)"></input></h3></span></span>
+	</div>
+	<div id="m3">
+		<img id="m1c" src="ear.jpg">
+		<span class="text-content3"><span class="1c" ><h3>Is this not Earth??<input type="button" value="Read more.." id="but3" onclick="disp(this.id)"></input></h3></span></span>
+	</div>
+	<div id="m4">
+		<img id="m1d" src="mar.jpg">
+		<span class="text-content4"><span class="1d"><h3>Is there life on mars??<input type="button" value="Read more.." id="but4" onclick="disp(this.id)"></input></h3></span></span>
+	</div>
+	<div id="m5">
+		<img id="m1e" src="moon.jpg">
+		<span class="text-content5"><span class="1e" ><h3>Moon has earth like core<input type="button" value="Read more.." id="but5" onclick="disp(this.id)"></input></h3></span></span>
+	</div>
+	<div id="m6">
+		<img id="m1f" src="ast.jpg">
+		<span class="text-content6"><span class="1c" ><h3>OA-5 Cygnus<input type="button" value="Read more.." id="but6" onclick="disp(this.id)"></input></h3></span></span>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	count1=0;count2=1;
+	function disp(z)
+	{	if(count1>0 && count2!=0)
+		{
+		document.body.removeChild(a);
+		disp1(z);
+		}
+		else
+		{ 
+		disp1(z);	
+		}
+	}//fn
+	function disp1(x)
+	{
+			p2=document.getElementById("picb");
+			p2.style.display='none';
+			p1=document.getElementById("pica");
+			p1.style.display='none';
+			a=document.createElement('div');
+			a.setAttribute('id','pop');
+			c=document.createElement('input');
+			c.setAttribute('type','button');
+			c.setAttribute('value','X');
+			c.setAttribute('id','close');
+			c.setAttribute('onclick','close1()')
+			a.appendChild(c);
+			if(x=="but1")
+			{	
+				h=document.createElement('h1');
+				h.setAttribute('id','heading');
+				h.innerHTML="JUNO IN JUPITER";
+				a.appendChild(h);
+				i=document.createElement('img');
+				i.setAttribute('src','juno_jupiter.gif');
+				i.setAttribute('id','im');
+				a.appendChild(i);
+				content=document.createElement('div');
+				content.setAttribute('id','con');
+				content.innerHTML="<br>The Juno mission was launched on 05 August 2011 to study Jupiter from polar orbit for approximately one year beginning in 2016. The primary scientific objectives of the mission are to collect data to investigate:<br>(1) the formation and origin of Jupiter's atmosphere and the potential migration of planets<br> (2) variations in Jupiter's deep atmosphere<br>(3) the fine structure of Jupiter's magnetic field<br>(4) the gravity field and distribution of mass inside the planet<br>(5) Jupiter's three-dimensional polar magnetosphere<br> <br>Juno carries eight experiments to achieve these objectives. Juno was the second mission chosen for the New Frontiers program.";
+				a.appendChild(content);
+			}//if
+			if(x=="but2")
+			{	
+				h=document.createElement('h1');
+				h.setAttribute('id','heading');
+				h.innerHTML="VOLCANO ON VENUS";
+				a.appendChild(h);
+				i=document.createElement('img');
+				i.setAttribute('src','vov.jpg');
+				i.setAttribute('id','im');
+				a.appendChild(i);
+				content=document.createElement('div');
+				content.setAttribute('id','con');
+				content.innerHTML="<br>The surface of Venus is dominated by volcanic features and has more volcanoes than any other planet in the Solar System. It has a surface that is 90% basalt, and about 65% of the planet consists of a mosaic of volcanic lava plains, indicating that volcanism played a major role in shaping its surface. There are more than 1000 volcanic structures and possible periodic resurfacing of Venus by floods of lava. The planet may have had a major global resurfacing event about 500 million years ago,[1] from what scientists can tell from the density of impact craters on the surface. Venus has a carbon dioxide rich atmosphere, with a density that is 90 times greater than Earth.";
+				a.appendChild(content);
+			}
+			if(x=="but3")
+			{	
+				h=document.createElement('h1');
+				h.setAttribute('id','heading');
+				h.innerHTML="NOT MOTHER EARTH??";
+				a.appendChild(h);
+				i=document.createElement('img');
+				i.setAttribute('src','ear.jpg');
+				i.setAttribute('id','im');
+				a.appendChild(i);
+				content=document.createElement('div');
+				content.setAttribute('id','con');
+				content.innerHTML="<br>The alien planet HD 189733b is a beautiful blue dot in a sea of inky blackness, just like Earth. But that's where the similarities between the two worlds end.<br>For starters, HD 189733b is much bigger and hotter than Earth; it's about the size of Jupiter and zips around its host star in just 2.2 Earth days. That orbit is so close that the exoplanet is probably tidally locked, always showing one face to its star, just as the moon always shows one face (the near side) to Earth.<br>And then there's the weather. The winds on HD 189733b (which lies about 63 light-years from Earth, in the constellation Vulpecula) blow at up to 5,400 mph (8,700 km/h) — about seven times the speed of sound. And if that's not crazy enough for you, scientists think the rain on this world is made not of water, but of molten glass.";
+				a.appendChild(content);
+			}
+			if(x=="but4")
+			{	
+				h=document.createElement('h1');
+				h.setAttribute('id','heading');
+				h.innerHTML="LIFE ON MARS???";
+				a.appendChild(h);
+				i=document.createElement('img');
+				i.setAttribute('src','mar1.jpg');
+				i.setAttribute('id','im');
+				a.appendChild(i);
+				content=document.createElement('div');
+				content.setAttribute('id','con');
+				content.innerHTML="<br>The possibility of life on Mars is a subject of significant interest to astrobiology due to the planet's proximity and similarities to Earth. To date no proof has been found of past or present life on Mars. However, cumulative evidence is now building that the ancient surface environment of Mars had liquid water and may have been habitable for microorganisms.<br> The existence of habitable conditions does not necessarily indicate the presence of life.Scientific searches for evidence of life began in the 19th century, and they continue today via telescopic investigations and landed missions. While early work focused on phenomenology and bordered on fantasy, modern scientific inquiry has emphasized the search for water, chemical biosignatures in the soil and rocks at the planet's surface, and biomarker gases in the atmosphere."
+				a.appendChild(content);
+			}
+			if(x=="but5")
+			{	
+				h=document.createElement('h1');
+				h.setAttribute('id','heading');
+				h.innerHTML="MOON'S CORE...";
+				a.appendChild(h);
+				i=document.createElement('img');
+				i.setAttribute('src','moon1.jpg');
+				i.setAttribute('id','im');
+				a.appendChild(i);
+				content=document.createElement('div');
+				content.setAttribute('id','con');
+				content.innerHTML="<br>State-of-the-art seismological techniques applied to Apollo-era data suggest our moon has a core similar to Earth’s. Uncovering details about the lunar core is critical for developing accurate models of the moon’s formation. The data sheds light on the evolution of a lunar dynamo — a natural process by which our moon may have generated and maintained its own strong magnetic field.<br>Uncovering details about the lunar core is critical for developing accurate models of the moon’s formation. The data sheds light on the evolution of a lunar dynamo — a natural process by which our moon may have generated and maintained its own strong magnetic field.<br> The research indicates the core contains a small percentage of light elements such as sulfur, echoing new seismology research on Earth that suggests the presence of light elements — such as sulfur and oxygen — in a layer around our own core."
+				a.appendChild(content);
+			}
+			if(x=="but6")
+			{	
+				h=document.createElement('h1');
+				h.setAttribute('id','heading');
+				h.innerHTML="JOURNEY TO THE ISS";
+				a.appendChild(h);
+				i=document.createElement('img');
+				i.setAttribute('src','ast1.jpg');
+				i.setAttribute('id','im');
+				a.appendChild(i);
+				content=document.createElement('div');
+				content.setAttribute('id','con');
+				content.innerHTML="<br>Orbital ATK’s latest Cygnus resupply ship completed rendezvous and capture operations with the International Space Station (ISS) on Sunday morning. The OA-5 Cygnus – packed with equipment and supplies for the crew of the orbital outpost – had to wait her turn to arrive, allowing for the docking of the Soyuz MS-02 spacecraft on Friday.<br>The requirement to upgrade the Antares with new engines was due to the loss of the CRS-3 mission.<br>For those missions, the extended Cygnus spacecraft was pushed uphill by the Centaur upper stage. This was also the debut of the larger capacity cargo craft."
+				a.appendChild(content);
+			}
+			document.body.appendChild(a);
+			count1++;
+			count2++;
+	}
+	function close1()
+	{
+		document.body.removeChild(a);
+		count2=0;
+		p2=document.getElementById("picb");
+		p2.style.display='block';
+		p1=document.getElementById("pica");
+		p1.style.display='block';
+	}
+</script>

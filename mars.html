@@ -1,0 +1,109 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+h1
+{   position:relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {color:  #e67300; left:-50px; top:0px;}
+    25%  {color: #ff9933 ;left:85px; top:0px;}
+    50%  {color: #e67300; left:85px; top:50px;}
+    75%  {color: #ff9933; left:-50px; top:50px;}
+    100% {color: #e67300; left:-50px; top:0px;}
+}
+
+body{text-align:center;
+	font-stretch:expanded;}
+.vid
+{
+	position:absolute;
+	top:130px;
+	left:420px;
+}
+.pwt
+{	position: absolute;
+	color:#ff9933 ;
+	top:150px;
+	left:50px;
+	width:350px;
+	height:200px;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color:white;
+}
+.pblts
+{	position: absolute;
+	color: #ff9933 ;
+	top:0px;
+	left:850px;
+	width:350px;
+	height:200px;
+	text-align:left;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color: white;
+}
+.pinfo
+{
+	color: #ffd9b3;
+	position:absolute;
+	top:250px;
+	left:25px;
+	width:1200px;
+}
+#hicon
+    {
+      border-radius:50%;
+      position:relative;
+      top:15px;
+      float: right;
+      height:50px;
+      width:50px;
+    }
+
+</style>
+<body background="maxres.jpg">
+<a href="index.php"><img src="hicon.png" id="hicon"></a>
+<div id="planet">
+<h1><center>MARS</center></h1>
+<div class="vid">
+<video width="460" height="220" autoplay><source src="mars.mp4"></video>
+  </div>
+  <div class="pwt">
+ <br><br>CURIOUS TO CHECK HOW MUCH YOU <br> WEIGH ON MARS??<br><br><br>
+  <input type="text" placeholder="enter your weight in kg" id="jup">
+  <input type="button" value="GO!" onclick="wt()" style="height: 20px;width: 65px;background-color: #ff8c1a"></button><br><br>
+  <p id="detailp"></p>
+  <script>
+  c=0;
+  function wt()
+  {
+	w=document.getElementById("jup").value;
+  	jw=w*0.38;
+  	document.getElementById("detailp").innerHTML="YOUR WEIGH: "+jw+" kg!!!";
+  }
+  </script>
+  <div class="pblts">
+  <ul></br>
+  <li>NAMED AFTER:Mars takes its name from the Roman god of war.</li></br>
+  <li>DIAMETER:6,779 km</li></br>
+  <li>DISTANCE FROM SUN:227,943,824 km</li></br>
+  <LI>ORBIT PERIOD:1.9 years</LI>
+  </ul>
+  </div>
+  <div class="pinfo">
+	<p><center>
+Mars and Earth have approximately the same landmass.Even though Mars has only 15% of the Earth’s volume and just over 10% of the Earth’s mass, around two thirds of the Earth’s surface is covered in water.
+On Mars the Sun appears about half the size as it does on Earth.Pieces of Mars have fallen to Earth.
+There are signs of liquid water on Mars.One day Mars will have a ring.
+Mars has the largest dust storms in the solar system. Only 18 missions to Mars have been successful.
+</br>Mars is home to the tallest mountain in the solar system. So if you wanna see tallest mountains, look for Mars!!! ;D
+	</center></p>
+  </div>
+  </div>
+  </body>

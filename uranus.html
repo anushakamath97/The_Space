@@ -1,0 +1,110 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+h1
+{   position:relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {color: #ff80df; left:-50px; top:0px;}
+    25%  {color:#cc0099 ;left:85px; top:0px;}
+    50%  {color: #ff80df; left:85px; top:50px;}
+    75%  {color: #cc0099; left:-50px; top:50px;}
+    100% {color: #ff80df; left:-50px; top:0px;}
+}
+
+body{text-align:center;
+	font-stretch:expanded;}
+.vid
+{
+	position:absolute;
+	top:130px;
+	left:430px;
+}
+.pwt
+{	position: absolute;
+	color: #ff80df;
+	top:150px;
+	left:50px;
+	width:350px;
+	height:200px;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color:white;
+}
+.pblts
+{	position: absolute;
+	color: #ff80df;
+	top:0px;
+	left:850px;
+	width:350px;
+	height:200px;
+	text-align:left;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color: white;
+}
+.pinfo
+{
+	color: #ffccf2;
+	position:absolute;
+	top:250px;
+	left:25px;
+	width:1200px;
+}
+#hicon
+    {
+      border-radius:50%;
+      position:relative;
+      top:15px;
+      float: right;
+      height:50px;
+      width:50px;
+    }
+
+</style>
+<body background="maxres.jpg">
+<a href="index.php"><img src="hicon.png" id="hicon"></a>
+<div id="planet">
+<h1><center>URANUS</center></h1>
+<div class="vid">
+<video width="460" height="200" autoplay><source src= "URANUS1.mp4"></video>
+  </div>
+  <div class="pwt">
+ <br><br>CURIOUS TO CHECK HOW MUCH YOU <br> WEIGH ON URANUS??<br><br><br>
+  <input type="text" placeholder="enter your weight in kg" id="jup">
+  <input type="button" value="GO!" onclick="wt()" style="height: 20px;width: 65px;background-color: #ff33cc"></button><br><br>
+  <p id="detailp"></p>
+  <script>
+  c=0;
+  function wt()
+  {
+	w=document.getElementById("jup").value;
+  	jw=w*0.92;
+  	document.getElementById("detailp").innerHTML="YOUR WEIGH: "+jw+" kg!!!";
+  }
+  </script>
+  <div class="pblts">
+  <ul></br>
+  <li>NAMED AFTER:It is named after the ancient Greek god of the sky</li></br>
+  <li>DIAMETER:50,724 km</li></br>
+  <li>DISTANCE FROM SUN:2,870,658,186 km </li></br>
+  <LI>ORBIT PERIOD:84.0 years</LI>
+  </ul>
+  </div>
+  <div class="pinfo">
+	<p><center>
+Uranus was officially discovered by Sir William Herschel in 1781. Uranus turns on its axis once every 17 hours, 14 minutes.
+The planet rotates in a retrograde direction, opposite to the way Earth and most other planets turn.
+Uranus makes one trip around the Sun every 84 Earth years. Uranus is often referred to as an “ice giant” planet.
+Uranus has two sets of very thin dark coloured rings. Uranus’ moons are named after characters created by William Shakespeare and Alexander Pope.
+Only one spacecraft has flown by Uranus.
+</br>Uranus hits the coldest temperatures of any planet. So make sure to go all packed up!!! LOL ;D
+</center></p>
+  </div>
+  </div>
+  </body>

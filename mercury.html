@@ -1,0 +1,113 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+h1
+{   position:relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {color: #9933ff; left:-50px; top:0px;}
+    25%  {color:#b366ff; left:85px; top:0px;}
+    50%  {color:#9933ff; left:85px; top:50px;}
+    75%  {color:#b366ff; left:-50px; top:50px;}
+    100% {color:#9933ff; left:-50px; top:0px;}
+}
+
+body{text-align:center;
+	font-stretch:expanded;}
+.vid
+{
+	position:absolute;
+	top:130px;
+	left:420px;
+}
+.pwt
+{	position: absolute;
+	color:#a31aff;
+	top:150px;
+	left:50px;
+	width:350px;
+	height:200px;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color:white;
+}
+.pblts
+{	position: absolute;
+	color:#a31aff;
+	top:0px;
+	left:850px;
+	width:350px;
+	height:200px;
+	text-align:left;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color: white;
+}
+.pinfo
+{
+	color: #d699ff;
+	position:absolute;
+	top:250px;
+	left:25px;
+	width:1200px;
+}
+#hicon
+    {
+      border-radius:50%;
+      position:relative;
+      top:12px;
+      float: right;
+      height:50px;
+      width:50px;
+    }
+
+</style>
+<body background="maxres.jpg">
+<a href="index.php"><img src="hicon.png" id="hicon"></a>
+<div id="planet">
+<h1><center>MERCURY</center></h1>
+<div class="vid">
+<video width="480" height="220" autoplay><source src= "mercury.mp4"></video>
+  </div>
+  <div class="pwt">
+ <br><br>CURIOUS TO CHECK HOW MUCH YOU <br> WEIGH ON MERCURY??<br><br><br>
+  <input type="text" placeholder="enter your weight in kg" id="jup">
+  <input type="button" value="GO!" onclick="wt()" style="height: 20px;width: 65px;background-color:#9933ff"></button><br><br>
+  <p id="detailp"></p>
+  <script>
+  c=0;
+  function wt()
+  {
+  	
+  	w=document.getElementById("jup").value;
+  	jw=w*0.38;
+  	document.getElementById("detailp").innerHTML="YOUR WEIGH: "+jw+" kg!!!";
+  }
+  </script>
+  <div class="pblts">
+  <ul></br>
+  <li>NAMED AFTER:Mercury is named for the Roman messenger to the gods.</li></br>
+  <li>DIAMETER:4,879 km</li></br>
+  <li>DISTANCE FROM SUN:57,909,227km(0.39 AU)</li></br>
+  <LI>ORBIT PERIOD:88 days </LI>
+  </ul>
+  </div>
+  <div class="pinfo">
+	<p><center>
+
+Mercury is the smallest planet in the Solar System. One of five planets visible with the naked eye.
+Mercury is the second densest planet. Even though the planet is small, Mercury is very dense.
+ Mercury also has the highest orbital eccentricity of all the planets with its distance from the Sun ranging from 46 to 70 million km.
+Mercury has wrinkles. Mercury is only the second hottest planet.Mercury is the most cratered planet in the Solar System. Unlike many other
+ planets which “self-heal” through natural geological processes, the surface of Mercury is covered in craters.
+Only two spacecraft have ever visited Mercury. Owing to its proximity to the Sun, Mercury is a difficult planet to visit.
+Mercury has an atmosphere (sort of);D
+	</center></p>
+  </div>
+  </div>
+  </body>

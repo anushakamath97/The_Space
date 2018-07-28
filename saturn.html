@@ -1,0 +1,112 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+h1
+{   position:relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {color: #cc0000; left:-50px; top:0px;}
+    25%  {color:#ff0000 ;left:85px; top:0px;}
+    50%  {color: #cc0000; left:85px; top:50px;}
+    75%  {color: #ff0000; left:-50px; top:50px;}
+    100% {color: #cc0000; left:-50px; top:0px;}
+}
+
+body{text-align:center;
+	font-stretch:expanded;}
+.vid
+{
+	position:absolute;
+	top:190px;
+	left:430px;
+}
+.pwt
+{	position: absolute;
+	color:#ff4d4d;
+	top:150px;
+	left:50px;
+	width:350px;
+	height:200px;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color:white;
+}
+.pblts
+{	position: absolute;
+	color:#ff4d4d;
+	top:0px;
+	left:850px;
+	width:350px;
+	height:200px;
+	text-align:left;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color: white;
+}
+.pinfo
+{
+	color: #ffb3b3 ;
+	position:absolute;
+	top:250px;
+	left:25px;
+	width:1200px;
+}
+#hicon
+    {
+      border-radius:50%;
+      position:relative;
+      top:15px;
+      float: right;
+      height:50px;
+      width:50px;
+    }
+
+</style>
+<body background="maxres.jpg">
+<a href="index.php"><img src="hicon.png" id="hicon"></a>
+<div id="planet">
+<h1><center>SATURN</center></h1>
+<div class="vid">
+<video width="420" height="220" autoplay><source src= "SATURN1.mp4"></video>
+  </div>
+  <div class="pwt">
+ <br><br>CURIOUS TO CHECK HOW MUCH YOU <br> WEIGH ON SATURN??<br><br><br>
+  <input type="text" placeholder="enter your weight in kg" id="jup">
+  <input type="button" value="GO!" onclick="wt()" style="height: 20px;width: 65px;background-color: #ff0000"></button><br><br>
+  <p id="detailp"></p>
+  <script>
+  c=0;
+  function wt()
+  {
+	w=document.getElementById("jup").value;
+  	jw=w*0.93;
+  	document.getElementById("detailp").innerHTML="YOUR WEIGH: "+jw+" kg!!!";
+  }
+  </script>
+  <div class="pblts">
+  <ul></br>
+  <li>NAMED AFTER:It is named for the Roman god Saturnus.</li></br>
+  <li>DIAMETER:116,464 km</li></br>
+  <li>DISTANCE FROM SUN:1,426,666,422 km</li></br>
+  <LI>ORBIT PERIOD:29.5 years</LI>
+  </ul>
+  </div>
+  <div class="pinfo">
+	<p><center>
+Saturn can be seen with the naked eye. It is the fifth brightest object in the solar system and is also easily studied through binoculars or a small telescope.
+Saturn was known to the ancients, including the Babylonians and Far Eastern observers.
+Saturn is the flattest planet.Saturn has oval-shaped storms similar to Jupiter’s. Saturn orbits the Sun once every 29.4 Earth years.
+Saturn’s upper atmosphere is divided into bands of clouds. Saturn is made mostly of hydrogen.
+Saturn has 150 moons and smaller moonlets. All are frozen worlds. The largest moons are Titan and Rhea. 
+Titan is a moon with complex and dense nitrogen-rich atmosphere. Four spacecraft have visited Saturn.
+</br>Saturn has the most extensive rings in the solar system. So make sure to check out it's beautiful rings!!! ;D
+
+	</center></p>
+  </div>
+  </div>
+  </body>

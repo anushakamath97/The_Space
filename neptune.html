@@ -1,0 +1,110 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+h1
+{   position:relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {color: #999999 ; left:-50px; top:0px;}
+    25%  {color:#cccccc;left:85px; top:0px;}
+    50%  {color: #999999 ; left:85px; top:50px;}
+    75%  {color: #cccccc; left:-50px; top:50px;}
+    100% {color: #999999 ; left:-50px; top:0px;}
+}
+
+body{text-align:center;
+	font-stretch:expanded;}
+.vid
+{
+	position:absolute;
+	top:130px;
+	left:420px;
+}
+.pwt
+{	position: absolute;
+	color: #999999 ;
+	top:150px;
+	left:50px;
+	width:350px;
+	height:200px;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color:white;
+}
+.pblts
+{	position: absolute;
+	color: #999999 ;
+	top:0px;
+	left:850px;
+	width:350px;
+	height:200px;
+	text-align:left;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color: white;
+}
+.pinfo
+{
+	color:  #cccccc;
+	position:absolute;
+	top:250px;
+	left:25px;
+	width:1200px;
+}
+#hicon
+    {
+      border-radius:50%;
+      position:relative;
+      top:15px;
+      float: right;
+      height:50px;
+      width:50px;
+    }
+
+</style>
+<body background="maxres.jpg">
+<a href="index.php"><img src="hicon.png" id="hicon"></a>
+<div id="planet">
+<h1><center>NEPTUNE</center></h1>
+<div class="vid">
+<video width="460" height="240" autoplay><source src= "NEPTUNE.mp4"></video>
+  </div>
+  <div class="pwt">
+ <br><br>CURIOUS TO CHECK HOW MUCH YOU <br> WEIGH ON NEPTUNE??<br><br><br>
+  <input type="text" placeholder="enter your weight in kg" id="jup">
+  <input type="button" value="GO!" onclick="wt()" style="height: 20px;width: 65px;background-color: #999999"></button><br><br>
+  <p id="detailp"></p>
+  <script>
+  c=0;
+  function wt()
+  {
+	w=document.getElementById("jup").value;
+  	jw=w*1.12;
+  	document.getElementById("detailp").innerHTML="YOUR WEIGH: "+jw+" kg!!!";
+  }
+  </script>
+  <div class="pblts">
+  <ul></br>
+  <li>NAMED AFTER:Neptune was the god of the Sea. </li></br>
+  <li>DIAMETER:49,244 km</li></br>
+  <li>DISTANCE FROM SUN:4,498,396,441 km  </li></br>
+  <LI>ORBIT PERIOD:164.8 years</LI>
+  </ul>
+  </div>
+  <div class="pinfo">
+	<p><center>
+Neptune was not known to the ancients. It is not visible to the naked eye and was first observed in 1846.
+Neptune spins on its axis very rapidly. Neptune is the smallest of the ice giants.
+The atmosphere of Neptune is made of hydrogen and helium, with some methane.
+Neptune has a very active climate.One of the largest storms ever seen was recorded in 1989. It was called the Great Dark Spot. It lasted about five years.
+Neptune has 14 moons. Neptune has a very thin collection of rings. They are likely made up of ice particles mixed with dust grains and possibly coated with a carbon-based substance.
+Only one spacecraft has flown by Neptune
+</center></p>
+  </div>
+  </div>
+  </body>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+solar system
+</title>
+<style type="text/css">
+	body
+	{
+		background-image: url("st.jpg");
+		position: absolute;
+		height:1200px;
+	}
+	.sun
+	{
+		position:relative;
+		top:250px;
+		left:520px;
+		width:230px;
+		border-radius:50%;
+	}
+	.mer
+	{	position:absolute;
+		top:300px;
+		left:570px;
+		width:42px;
+		transform: translateX(150px) rotate(-5deg);
+		animation: orbit1 35s linear infinite;
+		border-radius:50%;
+	}
+	
+	@keyframes orbit1 
+	{
+	from { 	transform: rotate(0deg) translateX(150px) translateY(5px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(150px) translateY(5px) rotate(-360deg); }
+	}
+	.ven
+	{
+		position:absolute;
+		top:230px;
+		left:560px;
+		width:80px;
+		transform: translateX(200px) rotate(-90deg);
+		animation: orbit2 55s linear infinite;
+		border-radius:50%;
+	}
+
+	@keyframes orbit2 
+	{
+	from { 	transform: rotate(0deg) translateX(-200px) translateY(10px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(-200px) translateY(10px) rotate(-360deg); }
+	}
+	.ear
+	{
+		position:absolute;
+		top:280px;
+		left:580px;
+		width:100px;
+		transform: translateX(270px) rotate(-5deg);
+		animation: orbit3 75s linear infinite;
+		border-radius:50%;
+	}
+	@keyframes orbit3
+	{
+	from { 	transform: rotate(0deg) translateX(270px) translateY(12px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(270px) translateY(12px) rotate(-360deg); }
+	}
+	.mars
+	{
+		position:absolute;
+		top:350px;
+		left:650px;
+		width:80px;
+		transform: translateX(350px) rotate(-5deg);
+		animation: orbit4 97s linear infinite;
+		border-radius:50%;
+	}
+	@keyframes orbit4
+	{
+	from { 	transform: rotate(0deg) translateX(-350px) translateY(5px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(-350px) translateY(5px) rotate(-360deg); }
+	}
+	.jup
+	{
+		position:absolute;
+		top:350px;
+		left:550px;
+		width:150px;
+		animation: orbit5 125s linear infinite;
+		border-radius:50%;
+	}
+	@keyframes orbit5
+	{
+	from { 	transform: rotate(0deg) translateX(-450px) translateY(-5px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(-450px) translateY(-5px) rotate(-360deg); }
+	}
+	.sat
+	{
+		position:absolute;
+		top:200px;
+		left:450px;
+		width:250px;
+		animation: orbit6 165s linear infinite;
+		border-radius:50%;
+	}
+	@keyframes orbit6
+	{
+	from { 	transform: rotate(0deg) translateX(550px) translateY(-10px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(550px) translateY(-10px) rotate(-360deg); }
+	}
+	.ur
+	{
+		position:absolute;
+		top:550px;
+		left:600px;
+		width:80px;
+		animation: orbit7 215s linear infinite;
+		border-radius:50%;
+	}
+	@keyframes orbit7
+	{
+	from { 	transform: rotate(0deg) translateX(-620px) translateY(-15px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(-620px) translateY(-15px) rotate(-360deg); }
+	}
+	.nep
+	{
+		position:absolute;
+		top:100px;
+		left:590px;
+		width:60px;
+		animation: orbit8 235s linear infinite;
+		border-radius:50%;
+	}
+	@keyframes orbit8
+	{
+	from { 	transform: rotate(0deg) translateX(650px) translateY(-15px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(650px) translateY(-15px) rotate(-360deg); }
+	}
+	div
+	{	position: inherit;
+		color:#FFEBCD;
+		font-style:oblique;
+		text-shadow: 2px 2px #FF0000;
+		opacity: 0;
+	}
+	div:hover
+	{	opacity: 1;
+		
+	}
+	
+</style>
+</head>
+<body>
+<img src="sun.jpg" class="sun"\>
+<a href="mercury.html"><img src="mer.jpg" class="mer"\><div class="mer">MERCURY</div></a>
+<a href="venus.html"><img src="ven.jpg" class="ven"\><div class="ven">VENUS</div></a>
+<a href="earth.html"><img src="earth.jpg" class="ear"\><div class="ear">EARTH</div></a>
+<a href="mars.html"><img src="mars.jpg" class="mars"\><div class="mars">MARS</div></a>
+<a href="jupiter.html"><img src="jup.jpg"  class="jup"\><div class="jup">JUPITER</div></a>
+<a href="saturn.html"><img src="sat.jpg" class="sat"\><div class="sat">SATURN</div></a>
+<a href="uranus.html"><img src="ur.jpg" class="ur"\><div class="ur">URANUS</div></a>
+<a href="neptune.html"><img src="nep.jpg" class="nep"\><div class="nep">NEPTUNE</div></a>
+</body>
+</html>

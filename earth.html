@@ -1,0 +1,107 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+h1
+{   position:relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {color:  #55ff00; left:-50px; top:0px;}
+    25%  {color: #3bb300; left:85px; top:0px;}
+    50%  {color: #55ff00; left:85px; top:50px;}
+    75%  {color: #3bb300; left:-50px; top:50px;}
+    100% {color: #55ff00; left:-50px; top:0px;}
+}
+
+body{text-align:center;
+	font-stretch:expanded;}
+.vid
+{
+	position:absolute;
+	top:120px;
+	left:420px;
+}
+.pwt
+{	position: absolute;
+	color: #3bb300;
+	top:150px;
+	left:50px;
+	width:350px;
+	height:200px;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color:white;
+}
+.pblts
+{	position: absolute;
+	color: #3bb300;
+	top:0px;
+	left:850px;
+	width:350px;
+	height:200px;
+	text-align:left;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color: white;
+}
+.pinfo
+{
+	color: #bbff99;
+	position:absolute;
+	top:250px;
+	left:25px;
+	width:1200px;
+}#hicon
+    {
+      border-radius:50%;
+      position:relative;
+      top:15px;
+      float: right;
+      height:50px;
+      width:50px;
+    }
+
+</style>
+<body background="maxres.jpg">
+<a href="index.php"><img src="hicon.png" id="hicon"></a>
+<div id="planet">
+<h1><center>EARTH</center></h1>
+<div class="vid">
+<video width="480" height="220" autoplay><source src= "earth.mp4"></video>
+  </div>
+  <div class="pwt">
+ <br><br>CURIOUS TO CHECK HOW MUCH YOU <br> WEIGH ON EARTH??<br><br><br>
+  <input type="text" placeholder="enter your weight in kg" id="jup">
+  <input type="button" value="GO!" onclick="wt()" style="height: 20px;width: 65px;background-color:#4ce600"></button><br><br>
+  <p id="detailp"></p>
+  <script>
+  c=0;
+  function wt()
+  {
+  	document.getElementById("detailp").innerHTML="Why do you even wanna check? </br> you weigh the same!!!";
+  }
+  </script>
+  <div class="pblts">
+  <ul></br>
+  <li>NAMED AFTER:The only planet that is not named after GOD!</li></br>
+  <li>DIAMETER:12,742 km</li></br>
+  <li>DISTANCE FROM SUN:149,598,262 km (1 AU)</li></br>
+  <LI>ORBIT PERIOD:365.26 days</LI>
+  </ul>
+  </div>
+  <div class="pinfo">
+	<p><center>
+The Earth’s rotation is gradually slowing.This deceleration is happening almost imperceptibly, at approximately 17 milliseconds per hundred years.
+As you all know, The Earth was once believed to be the centre of the universe.
+Earth has a powerful magnetic field. This phenomenon is caused by the nickel-iron core of the planet, coupled with its rapid rotation. This field protects the Earth from the effects of solar wind.
+There is only one natural satellite of the planet Earth. As a percentage of the size of the body it orbits, the Moon is the largest satellite of any planet in our solar system.
+The Earth is the densest planet in the Solar System.
+</br> So you now know that you are living on the wonderful planet in space!!! ;D
+	</center></p>
+  </div>
+  </div>
+  </body>

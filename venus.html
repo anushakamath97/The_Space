@@ -1,0 +1,112 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+h1
+{   position:relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {color:  #99b3ff; left:-50px; top:0px;}
+    25%  {color:#002db3; left:85px; top:0px;}
+    50%  {color: #99b3ff; left:85px; top:50px;}
+    75%  {color:#002db3; left:-50px; top:50px;}
+    100% {color: #99b3ff; left:-50px; top:0px;}
+}
+
+body{text-align:center;
+	font-stretch:expanded;}
+.vid
+{
+	position:absolute;
+	top:130px;
+	left:420px;
+}
+.pwt
+{	position: absolute;
+	color:#0040ff;
+	top:150px;
+	left:50px;
+	width:350px;
+	height:200px;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color:white;
+}
+.pblts
+{	position: absolute;
+	color:#0040ff;
+	top:0px;
+	left:850px;
+	width:350px;
+	height:200px;
+	text-align:left;
+	border-width: 2px 2px 2px 2px;
+	border-style: dashed;
+	border-color: white;
+}
+.pinfo
+{
+	color: #b3c6ff;
+	position:absolute;
+	top:250px;
+	left:25px;
+	width:1200px;
+}
+    #hicon
+    {
+      border-radius:50%;
+      position:relative;
+      top:15px;
+      float: right;
+      height:50px;
+      width:50px;
+    }
+
+</style>
+<body background="maxres.jpg">
+<a href="index.php"><img src="hicon.png" id="hicon"></a>
+<div id="planet">
+<h1><center>VENUS</center></h1>
+<div class="vid">
+<video width="480" height="220" autoplay><source src= "venusv.mp4"></video>
+  </div>
+  <div class="pwt">
+ <br><br>CURIOUS TO CHECK HOW MUCH YOU <br> WEIGH ON VENUS??<br><br><br>
+  <input type="text" placeholder="enter your weight in kg" id="jup">
+  <input type="button" value="GO!" onclick="wt()" style="height: 20px;width: 65px;background-color:#4d79ff"></button><br><br>
+  <p id="detailp"></p>
+  <script>
+  c=0;
+  function wt()
+  {
+  	
+  	w=document.getElementById("jup").value;
+  	jw=w*0.91;
+  	document.getElementById("detailp").innerHTML="YOUR WEIGH: "+jw+" kg!!!";
+  }
+  </script>
+  <div class="pblts">
+  <ul></br>
+  <li>NAMED AFTER:Named after the Roman goddess of love and beauty.</li></br>
+  <li>DIAMETER:12,104 km</li></br>
+  <li>DISTANCE FROM SUN:108,209,475 km</li></br>
+  <LI>ORBIT PERIOD:225 days</LI>
+  </ul>
+  </div>
+  <div class="pinfo">
+	<p><center>
+Venus is often called the Earth’s sister planet. Venus is also known as the Morning Star and the Evening Star. 
+Venus rotates in the opposite direction to most other planets. This means that Venus is rotating
+ in the opposite direction to the Sun, this is also know as a retrograde rotation.
+A day on Venus lasts longer than a year. Atmospheric pressure on Venus is 92 times greater than the Earth’s. 
+Venus is the hottest planet in our solar system. A detailed study of Venus is currently underway.The Russians sent the first mission to Venus. 
+Venus is the second brightest object in the night sky. Only the Moon is brighter.At one point it was thought Venus might be a tropical paradise.
+</br> So whenever you see the sky and find a brightst star, it could be Venus! ;D
+	</center></p>
+  </div>
+  </div>
+  </body>
